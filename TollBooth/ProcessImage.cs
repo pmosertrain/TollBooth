@@ -31,7 +31,7 @@ namespace TollBooth
                 {
                     licensePlateImage = br.ReadBytes((int)incomingPlate.Length);
                 }
-                // TODOx 1: Set the licensePlateText value by awaiting a new FindLicensePlateText.GetLicensePlate method.
+                // TODOx  1: Set the licensePlateText value by awaiting a new FindLicensePlateText.GetLicensePlate method.
                 // COMPLETE: licensePlateText = await new.....
                 licensePlateText = await new FindLicensePlateText(log, _client).GetLicensePlate(licensePlateImage);
 
